@@ -29,11 +29,11 @@ class App extends React.Component {
         <div className="wrapper">
           <LineChart className="line-chart" width={1200} height={500} data={this.state.tickerMessages}>
             <CartesianGrid strokeDasharray="3 3" />
-            <YAxis datakey="price" />
+            <YAxis dataKey="price" />
             <XAxis dataKey="time" />
             <Tooltip />
-            <Line type="monotone" dataKey="high_24h" stroke="#6B4D57" width={20} />
-            <Line type="monotone" dataKey="low_24h" stroke="#DDC8C4" width={20} />
+            <Line type="monotone" dataKey="high_24h" stroke="#6B4D57" strokeWidth={5} />
+            <Line type="monotone" dataKey="low_24h" stroke="#DDC8C4" strokeWidth={5} />
             <Legend verticalAlign="top" height={36} />
           </LineChart>
         </div>
